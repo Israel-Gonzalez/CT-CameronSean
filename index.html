@@ -1,0 +1,24 @@
+<<!DOCTYPE html>
+    <html lang="en" ng-app="csApp">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Code Challenge</title>
+        <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript" src="csController.js"></script>
+        <!--      <script type="text/javascript" src="csFactory.js"></script> -->
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    </head>
+
+    <body ng-controller="csCtrl as vm">
+        <table>
+            <tbody>
+                <tr ng-repeat="multiple in vm.multiples">
+                    <td>{{multiple}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+
+    </html>
